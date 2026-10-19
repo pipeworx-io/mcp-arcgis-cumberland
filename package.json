@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-cumberland",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Cumberland County GIS — Cumberland County, North Carolina open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-bd6b68158e9e5f7fb9d66584fa1b9263a19149bd07a110da1754c46afeaeb9f2",
-    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
+    "sourceHash": "v1-f1b539d19f80e60694f6cb905e8f3b87cf3592ee03891e2cfdc69e4536758101",
+    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
   }
 }
