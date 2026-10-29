@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-cumberland",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Cumberland County GIS — Cumberland County, North Carolina open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-cumberland": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-cumberland"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-cumberland.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-cumberland",
   "pipeworx": {
-    "sourceHash": "v1-7d264421b678d51ad2a878bc721403e46c79a41ce9320df4ce712b394857c0b4",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "arcgis-cumberland",
+    "gatewaySlug": "arcgis-cumberland",
+    "sourceHash": "v1-348db682b7f44228023546b3dab860d7f61301ccc7974084d6410fd7610f5396",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
